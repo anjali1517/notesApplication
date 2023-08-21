@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menuProfile"
+        android:title="profile"
+        android:icon="@drawable/person_foreground"/>
+
+    <item android:id="@+id/menuSetting"
+        android:title="setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+       />
+
+    <item android:id="@+id/menuShare"
+        android:title="shareapp"
+        android:icon="@drawable/ic_baseline_share_24"
+        />
+
+    <item android:id="@+id/menuSearch"
+        android:title="search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always"/>
+
+</menu>

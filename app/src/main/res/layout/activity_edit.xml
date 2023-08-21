@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NotesActivity">
+
+        <EditText
+            android:id="@+id/edtEditTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:hint="Title"
+            android:textSize="22sp"
+            android:layout_alignParentTop="true"/>
+
+        <EditText
+            android:id="@+id/edtEditDetails"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_below="@+id/edtEditTitle"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/alike"
+            android:gravity="top|start"
+            android:hint="Notes details" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtEditDetails"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="UPDATE" />
+
+    </RelativeLayout>
+

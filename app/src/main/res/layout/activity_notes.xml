@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotesActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginLeft="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/imgBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/done_foreground" />
+
+</LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/brawler"
+        android:hint="Title"
+        android:padding="15dp"
+        android:background="@drawable/shape"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"
+         />
+
+    <EditText
+        android:id="@+id/edtBody"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_below="@+id/edtTitle"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/alike"
+        android:gravity="top|start"
+        android:background="@drawable/shape"
+        android:hint="Notes details" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
